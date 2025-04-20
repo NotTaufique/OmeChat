@@ -2,6 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://github.com/NotTaufique/OmeChat",
   "dependencies": {
     "@chakra-ui/icons": "2.1.1",
     "@chakra-ui/react": "2.8.2",
@@ -16,6 +17,7 @@
     "@tsparticles/slim": "^3.8.1",
     "emoji-picker-react": "^4.12.2",
     "framer-motion": "^12.7.4",
+    "gh-pages": "^6.3.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-icons": "^5.5.0",
@@ -29,7 +31,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
